@@ -1,0 +1,326 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6069733B-BA4D-4049-A98F-5E716DD68E35}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAppLoja</RootNamespace>
+    <AssemblyName>WebAppLoja</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\admin.aspx" />
+    <Content Include="Admin\cadFuncionario.aspx" />
+    <Content Include="Admin\cadProdutos.aspx" />
+    <Content Include="Admin\editarFuncionario.aspx" />
+    <Content Include="Admin\editarProduto.aspx" />
+    <Content Include="Admin\funcionarios.aspx" />
+    <Content Include="Admin\pedidos.aspx" />
+    <Content Include="Admin\produtosAdmin.aspx" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\upload\clock1_front.png" />
+    <Content Include="assets\img\upload\clock2_front.png" />
+    <Content Include="assets\img\upload\clock3_front.png" />
+    <Content Include="assets\img\upload\jordanRetroChicago.jpg" />
+    <Content Include="assets\img\upload\kyrie7.jpg" />
+    <Content Include="assets\img\upload\piano2.jpg" />
+    <Content Include="assets\img\upload\violao2.jpg" />
+    <Content Include="assets\img\upload\violao3.png" />
+    <Content Include="assets\img\upload\violino2.png" />
+    <Content Include="User\AreaUsuario.aspx" />
+    <Content Include="assets\img\carrinho.png" />
+    <Content Include="assets\img\clock1.png" />
+    <Content Include="assets\img\clock1_front.png" />
+    <Content Include="assets\img\clock2.png" />
+    <Content Include="assets\img\clock2_front.png" />
+    <Content Include="assets\img\clock3.png" />
+    <Content Include="assets\img\clock3_front.png" />
+    <Content Include="assets\img\eh o expressive.png" />
+    <Content Include="assets\img\funcionario.jpg" />
+    <Content Include="assets\img\guitarra2.jpg" />
+    <Content Include="assets\img\guitarra3.png" />
+    <Content Include="assets\img\guitarra4.png" />
+    <Content Include="assets\img\guitarra_tagima_memphis_red.jpg" />
+    <Content Include="assets\img\icon1-header.png" />
+    <Content Include="assets\img\icon1-header_ativo.png" />
+    <Content Include="assets\img\icon2-header.png" />
+    <Content Include="assets\img\icon2-header_ativo.png" />
+    <Content Include="assets\img\icon3-header.png" />
+    <Content Include="assets\img\icon3-header_ativo.png" />
+    <Content Include="assets\img\icon4-header.png" />
+    <Content Include="assets\img\icon4-header_ativo.png" />
+    <Content Include="assets\img\nikePLUSexpressive.png" />
+    <Content Include="assets\img\nyc.jpg" />
+    <Content Include="assets\img\perfil.png" />
+    <Content Include="assets\img\piano1.jpg" />
+    <Content Include="assets\img\piano2.jpg" />
+    <Content Include="assets\img\produtos-back.jpg" />
+    <Content Include="assets\img\violao.jpg" />
+    <Content Include="assets\img\violao2.jpg" />
+    <Content Include="assets\img\violao3.png" />
+    <Content Include="assets\img\violino1.png" />
+    <Content Include="assets\img\violino2.png" />
+    <Content Include="assets\img\violino3.png" />
+    <Content Include="Carrinho.aspx" />
+    <Content Include="DetalhesProduto.aspx" />
+    <Content Include="User\EditarASiMesmo.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="produtos.aspx" />
+    <Content Include="TestarConexao.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\cadFuncionario.aspx.cs">
+      <DependentUpon>cadFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\cadFuncionario.aspx.designer.cs">
+      <DependentUpon>cadFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\cadProdutos.aspx.cs">
+      <DependentUpon>cadProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\cadProdutos.aspx.designer.cs">
+      <DependentUpon>cadProdutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\editarFuncionario.aspx.cs">
+      <DependentUpon>editarFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\editarFuncionario.aspx.designer.cs">
+      <DependentUpon>editarFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\editarProduto.aspx.cs">
+      <DependentUpon>editarProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\editarProduto.aspx.designer.cs">
+      <DependentUpon>editarProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\funcionarios.aspx.cs">
+      <DependentUpon>funcionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\funcionarios.aspx.designer.cs">
+      <DependentUpon>funcionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\pedidos.aspx.cs">
+      <DependentUpon>pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\pedidos.aspx.designer.cs">
+      <DependentUpon>pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\produtosAdmin.aspx.cs">
+      <DependentUpon>produtosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\produtosAdmin.aspx.designer.cs">
+      <DependentUpon>produtosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\AreaUsuario.aspx.cs">
+      <DependentUpon>AreaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AreaUsuario.aspx.designer.cs">
+      <DependentUpon>AreaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrinho.aspx.cs">
+      <DependentUpon>Carrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrinho.aspx.designer.cs">
+      <DependentUpon>Carrinho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesProduto.aspx.cs">
+      <DependentUpon>DetalhesProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesProduto.aspx.designer.cs">
+      <DependentUpon>DetalhesProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditarASiMesmo.aspx.cs">
+      <DependentUpon>EditarASiMesmo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditarASiMesmo.aspx.designer.cs">
+      <DependentUpon>EditarASiMesmo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="produtos.aspx.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="produtos.aspx.designer.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestarConexao.aspx.cs">
+      <DependentUpon>TestarConexao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestarConexao.aspx.designer.cs">
+      <DependentUpon>TestarConexao.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{C6878BFA-9756-4899-9956-D619C54D0652}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62098</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62098/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
